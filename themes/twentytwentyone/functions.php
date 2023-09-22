@@ -651,10 +651,10 @@ if ( ! function_exists( 'wp_get_list_item_separator' ) ) :
 	}
 endif;
 
-//** added for test purposes only. Overriding parent theme */
+//** added for test purposes only. Overriding parent theme. Quick edit */
 function add_custom_greeting($content) {
     if(is_single()) {  // Check if it's a single post
-        $greeting = '<p>Hello, welcome to this post!</p>';
+        $greeting = '<p>Hello, welcome to this post! And here is a quick edit</p>';
         $content = $greeting . $content;  // Prepend the greeting to the post content
     }
     return $content;
