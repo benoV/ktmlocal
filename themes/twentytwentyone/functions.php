@@ -650,3 +650,14 @@ if ( ! function_exists( 'wp_get_list_item_separator' ) ) :
 		return __( ', ', 'twentytwentyone' );
 	}
 endif;
+
+//** added for test purposes only. Overriding parent theme */
+function add_custom_greeting($content) {
+    if(is_single()) {  // Check if it's a single post
+        $greeting = '<p>Hello, welcome to this post!</p>';
+        $content = $greeting . $content;  // Prepend the greeting to the post content
+    }
+    return $content;
+}
+
+add_filter('the_content', 'add_custom_greeting');
