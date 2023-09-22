@@ -3,6 +3,7 @@
 #---------------------------
 /themes/*
 !/themes/qorp-theme
+!/themes/twentytwentythree
 
 #---------------------------
 # Plugins
