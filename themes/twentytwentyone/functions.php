@@ -654,7 +654,7 @@ endif;
 //** added for test purposes only. Overriding parent theme. Quick edit */
 function add_custom_greeting($content) {
     if(is_single()) {  // Check if it's a single post
-        $greeting = '<p>Hello, welcome to this post! Functions.</p>';
+        $greeting = '<p>Hello, welcome to this post! Functions stage.</p>';
         $content = $greeting . $content;  // Prepend the greeting to the post content
     }
     return $content;
