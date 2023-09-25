@@ -654,7 +654,7 @@ endif;
 //** added for test purposes only. Overriding parent theme. Quick edit */
 function add_custom_greeting($content) {
     if(is_single()) {  // Check if it's a single post
-        $greeting = '<p>local, wp stage, wp main via wpe controls</p>';
+        $greeting = '<p>local, wp stage, wp main via wpe controls. Completed. Back to local plus database (via "Local" app). New comp</p>';
         $content = $greeting . $content;  // Prepend the greeting to the post content
     }
     return $content;
