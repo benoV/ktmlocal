@@ -13,8 +13,7 @@ jobs:
       with:
       # Deploy vars
         WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
-        WPE_ENV: ktmlocalsg
-        # Deploy Options
+        WPE_ENV: ktmlocalstg
         REMOTE_PATH: "wp-content/"
         PHP_LINT: TRUE
         CACHE_CLEAR: TRUE
